@@ -5,7 +5,7 @@ const http= require("http")
 const server=http.createServer(app)
 
 app.get("/", (req, res) => {
-    res.send("<h1>Aplicación CHAT</h1>")
+   res.sendFile(`${__dirname}/usuario/index.html`)
 })
 server.listen(3000, ()=>{
     console.log("Servidor corriendo en http://localhost:3000")}
